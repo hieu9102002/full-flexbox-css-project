@@ -1,0 +1,22 @@
+.row {
+    max-width: $grid-width;
+    //background-color: lightgrey;
+    margin: 0 auto;
+    gap: $gutter-horizontal;
+    display: flex;
+    justify-content: center;
+
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+
+    [class^="col-"]{
+        //background-color: red;
+    }
+
+    @for $i from 1 through 3 {
+        .col-#{$i} {
+            flex: $i;
+        }
+    }
+}
