@@ -13,3 +13,25 @@
 .u-margin-bottom-small {
     margin-bottom: 1.5rem;
 }
+
+
+.u-margin-bottom-huge {
+    margin-bottom: 10rem;
+}
+
+
+.u-margin-top-big {
+    margin-top: 8rem;
+}
+
+.u-background-gradient-primary {
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.u-background-gradient-secondary {
+    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+}
+
+.u-background-gradient-tertiary {
+    background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+}
