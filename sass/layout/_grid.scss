@@ -2,15 +2,16 @@
     max-width: $grid-width;
     //background-color: lightgrey;
     margin: 0 auto;
-    gap: $gutter-horizontal;
     display: flex;
     justify-content: center;
+    gap: $gutter-horizontal;
 
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
     }
 
     [class^="col-"]{
+        //padding: 0 $gutter-horizontal;
         //background-color: red;
     }
 
