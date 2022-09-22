@@ -8,6 +8,10 @@
     height: 100%;
     transition: transform .3s;
 
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
+
     &:hover{
         transform: scale(1.03) translateY(-1.5rem);
         box-shadow: 0 2rem 6rem rgba($color-black, .2);
@@ -19,8 +23,10 @@
 
         display: inline-block;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-        -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
     }
 }

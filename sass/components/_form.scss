@@ -18,6 +18,10 @@
         width: 90%;
         transition: all .3s;
 
+        @include respond(tab-port) {
+            width: 100%;
+        }
+
         &:focus{
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
@@ -50,10 +54,16 @@
 
     &__group--radio{
         display: flex;
+
+        @include respond(tab-port){
+            flex-direction: column;
+            gap: 2rem;
+        }
     }
 
     &__radio-group {
-        display: inline-block
+        display: inline-block;
+
     }
 
     &__radio-label {
