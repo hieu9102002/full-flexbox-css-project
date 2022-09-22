@@ -35,6 +35,16 @@ body {
   }
 }
 
+::-moz-selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -1152,6 +1162,8 @@ body {
   visibility: hidden;
   transition: all 0.3s;
   overflow: hidden;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .popup:target {
   opacity: 1;
